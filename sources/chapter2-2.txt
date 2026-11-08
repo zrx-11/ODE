@@ -1,0 +1,319 @@
+--- p1 ---
+常微分方程
+一阶微分方程的初等解法
+
+
+
+ 杭电理学院
+
+      2026 年8 月
+
+--- p2 ---
+线性微分方程与常数变易法(Linear Differential Equations and the Method of Constant Variation)
+内容提要
+
+
+     1 线性微分方程与常数变易法(Linear Differential Equations and the
+      Method of Constant Variation)
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p3 ---
+线性微分方程与常数变易法(Linear Differential Equations and the Method of Constant Variation)
+线性微分方程Linear Differential Equations
+
+  一阶线性微分方程(First-order linear differential
+   equation)
+
+                dy
+            = P (x) y + Q (x) ,         (2.23)
+                dx
+ 其中P (x) , Q (x) 是x 的连续函数. 若Q (x) = 0,
+    ( 2.23) 变为
+                   dy
+              = P (x) y,             (2.24)
+                    dx
+   (2.24) 称为一阶齐次线性微分方程(homogeneous
+   equation).
+ 若Q (x)̸ = 0, (2.23) 称为一阶非齐次线性微分方程
+   (non-homogeneous equation).
+
+                                    第二章一阶微分方程的初等解法
+
+--- p4 ---
+线性微分方程与常数变易法(Linear Differential Equations and the Method of Constant Variation)
+常数变易法Method of Constant Variation
+
+
+                   dy
+              = P (x) y,             (2.24)
+                    dx
+
+  是变量分离方程, 它的通解为
+                                  ∫
+                    y = ce  P(x)dx,             (2.25)
+
+  这里c 是任意常数.
+  为求解(2.23)，假设(2.23) 的通解有
+                                     ∫
+                  y = c (x) e  P(x)dx            (2.26)
+
+  的形式.
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p5 ---
+线性微分方程与常数变易法(Linear Differential Equations and the Method of Constant Variation)
+常数变易法Method of Constant Variation
+
+   对(2.26) 求导数, 并带入(2.23)，再简化后得到
+
+              dc (x)              ∫
+             = Q (x) e−  P(x)dx,
+                dx
+
+ 积分后得
+               ∫                                     ∫
+            c (x) =  Q (x) e−  P(x)dx dx + ¯c,
+
+  这里¯c 是任意常数. 将上式代入(2.26), 得到方程
+   (2.23) 的通解为
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p6 ---
+线性微分方程与常数变易法(Linear Differential Equations and the Method of Constant Variation)
+常数变易法Method of Constant Variation
+
+  将上式代入(2.26), 得到方程(2.23) 的通解为
+            (∫             )             ∫                       ∫
+     y = e  P(x)dx   Q (x) e−  P(x)dx dx + ¯c   .  (2.28)
+
+ 这种将齐次微分方程中常数c 变易为待定函数
+   c (x) 的方法, 称为常数变易法Method of Constant
+    Variation.
+ 常数变易法实际上也是一种变量变换的方法, 通过
+  变换(2.26) 可将方程(2.23) 化为变量分离方程.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p7 ---
+线性微分方程与常数变易法(Linear Differential Equations and the Method of Constant Variation)
+
+ 例1：解方程                                (        )            dy   (x + 1)  −ny = ex(x + 1)n+1 n 为常数   .             dx
+ 解：将方程改写为
+
+              dy    n
+           =    + ex(x + 1)n,       (2.29)              dx   x + 1y
+
+ 先求解齐次线性微分方程
+
+                   dy    n
+              =                    dx   x + 1y
+
+ 得通解
+                    y = c(x + 1)n.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p8 ---
+线性微分方程与常数变易法(Linear Differential Equations and the Method of Constant Variation)
+
+
+                    y = c(x + 1)n.
+
+  然后用常数变易法求非齐次微分方程(2.29) 的通
+  解. 设任意常数c 是以x 为变量的待定函数c (x) ,
+ 即
+                  y = c (x) (x + 1)n.           (2.30)
+
+  对其微分, 得到
+
+     dy   dc (x)
+     =       (x + 1)n + n(x + 1)n−1c (x) .   (2.31)
+      dx    dx
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p9 ---
+线性微分方程与常数变易法(Linear Differential Equations and the Method of Constant Variation)
+
+   将(2.30), (2.31) 代入方程(2.29), 整理得
+
+                    dc (x)
+                = ex,
+                     dx
+
+ 解得
+
+                     c (x) = ex + ¯c.
+
+  将c (x) 代入(2.30), 即得原方程的通解
+                 y = (ex + ¯c) (x + 1)n,
+
+  其中¯c 为任意常数.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p10 ---
+线性微分方程与常数变易法(Linear Differential Equations and the Method of Constant Variation)
+
+ 方程
+     dy                    (               )
+     = P (x) y + Q (x) yn   n̸ = 0, 1 为实数   (2.35)
+     dx
+
+  称为伯努利(Bernoulli) 微分方程, 其中P (x) , Q (x)
+  是x 的连续函数.
+ 下面讨论如何求出方程解：
+  首先，y = 0 是方程的解。
+  其次，当y̸ = 0 时, 用y−n 乘(2.35) 两边, 得到
+
+             dy
+          y−n  = P (x) y1−n + Q (x) ,         (2.36)
+              dx
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p11 ---
+线性微分方程与常数变易法(Linear Differential Equations and the Method of Constant Variation)
+
+
+
+               dy
+            y−n  = P (x) y1−n + Q (x) ,      (2.36)
+                dx
+          1  dy1−n
+            = P (x) y1−n + Q (x) ,      (2.36’)
+        1 −n  dx
+
+ 引入变量变换
+
+                          z = y1−n,                (2.37)
+
+ 得到
+
+          dz
+        = (1 −n) P (x) z + (1 −n) Q (x) ,
+          dx
+
+  这是线性微分方程, 可按上面介绍的方法求其通解,
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p12 ---
+线性微分方程与常数变易法(Linear Differential Equations and the Method of Constant Variation)
+
+  例3：求方程dy = 6y −xy2 的通解.                      dx      x
+ 解：这是n = 2 时的伯努利方程. 作变量变换
+    z = y−1 ,
+                     (     dz        dy     = −y−2  = −y−2  6y −xy2) = −6 + x.     dx        dx           x           xz
+
+ 即
+
+                    dz              = −6 + x.                   dx     xz
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p13 ---
+线性微分方程与常数变易法(Linear Differential Equations and the Method of Constant Variation)
+
+ 先求解齐次线性微分方程
+                      dz               = −6                     dx     xz
+ 得通解
+                          z = cx−6.
+  用常数变易法. 令z = c (x) x−6 为非齐次方程的解，
+ 代入方程得
+     dz   dc (x)     =      x−6 −6c (x) x−7 = −6  (x) x−6 + x,     dx    dx                   xc
+ 化简得
+                    dc (x)
+                = x7,
+                     dx
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p14 ---
+线性微分方程与常数变易法(Linear Differential Equations and the Method of Constant Variation)
+
+
+                    dc (x)
+                = x7,
+                     dx
+
+ 解得
+                              x8
+                     c (x) =  + ¯c.
+                         8
+
+ 即方程的通解
+              (x8  )       x2      ¯c
+               z =   + ¯c  x−6 =  +                  8            8    x6,
+
+  其中¯c 为任意常数.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p15 ---
+线性微分方程与常数变易法(Linear Differential Equations and the Method of Constant Variation)
+
+              (x8  )       x2      ¯c
+               z =   + ¯c  x−6 =  +                  8            8    x6,
+
+ 变回原来变量y , 即原方程的通解为
+
+                    1    x2      ¯c
+              =  +
+                     y   8    x6
+
+  此外, 方程还有解y = 0 .
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p16 ---
+谢 谢!
+Thank you!

@@ -1,0 +1,522 @@
+--- p1 ---
+常微分方程
+一阶微分方程的初等解法
+
+
+
+ 杭电理学院
+
+      2026 年8 月
+
+--- p2 ---
+一阶隐式微分方程与参数表示First-order implicit differential equations and parametric representation
+内容提要
+
+
+     1 一阶隐式微分方程与参数表示First-order implicit differential
+       equations and parametric representation
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p3 ---
+(    )                (    )
+一阶隐式微分方程与参数表示First-order implicit differential equations and parametric可以解出yrepresentation或x 的方程 不显含y 或x 的方程
+
+  一阶隐式微分方程(First-order implicit differential
+   equations) 形式为
+                      (              F  x, y, y′) = 0.
+
+  如果能解出导数y′ ,y′ = f (x, y) , 则可根据前面所
+  介绍的方法进行求解.
+  但如果很难从方程中解出y′ , 则要寻求其他方法
+  来求解, 这就是本节讨论的主要内容. 我们主要介
+  绍下面四种类型:
+        (           (        (            (   y = f  x, y′) , x = f  y, y′) , F  x, y′) = 0, F  y, y′) = 0.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p4 ---
+(    )                (    )
+一阶隐式微分方程与参数表示First-order implicit differential equations and parametric可以解出yrepresentation或x 的方程 不显含y 或x 的方程
+
+  (1)首先讨论形如
+                           (                     y = f  x, y′)              (2.62)
+
+  的方程, 这里假设函数f (x, y′) 有连续的偏导数. 引
+ 进参数p , 令y′ = p . 则方程(2.62) 变为
+
+                     y = f (x, p) .              (2.63)
+
+   将(2.63) 两边对x 求导数, 并将y′ = p 代入, 得
+
+                         ∂f    ∂f dp
+                  p =  +                   (2.64)
+                     ∂x   ∂p dx
+
+   (2.64) 是关于x, p 的一阶微分方程, 可按照
+   §2.1 −§2.3 求解.
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p5 ---
+(    )                (    )
+一阶隐式微分方程与参数表示First-order implicit differential equations and parametric可以解出yrepresentation或x 的方程 不显含y 或x 的方程
+
+
+                         ∂f    ∂f dp
+                  p =  +                   (2.64)
+                     ∂x   ∂p dx
+
+ 对于上式的求解，分三种情况讨论：
+  情形1：若(2.64) 的通解为
+
+                    p = φ (x, c) ,
+
+  将它代入(2.63), 得
+
+                  y = f (x, φ (x, c)) ,
+
+  即为方程(2.62) 的通解.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p6 ---
+(    )                (    )
+一阶隐式微分方程与参数表示First-order implicit differential equations and parametric可以解出yrepresentation或x 的方程 不显含y 或x 的方程
+
+
+                         ∂f    ∂f dp
+                  p =  +                   (2.64)
+                     ∂x   ∂p dx
+
+  情形2：若(2.64) 的通解为
+
+                      x = ψ (p, c) ,
+
+  则方程(2.62) 的通解为参数方程形式:
+          {
+                    x = ψ (p, c) ,
+                   y = f (ψ (p, c) , p) ,
+
+  其中p 为参数, c 是任意常数.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p7 ---
+(    )                (    )
+一阶隐式微分方程与参数表示First-order implicit differential equations and parametric可以解出yrepresentation或x 的方程 不显含y 或x 的方程
+
+
+                         ∂f    ∂f dp
+                  p =  +                   (2.64)
+                     ∂x   ∂p dx
+
+  情形3：若(2.64) 的通解为
+
+             Φ (x, p, c) = 0,
+
+  则方程(2.62) 的通解为参数方程形式:
+           {
+             Φ (x, p, c) = 0,
+                    y = f (x, p) ,
+
+  其中p 为参数, c 是任意常数.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p8 ---
+(    )                (    )
+一阶隐式微分方程与参数表示First-order implicit differential equations and parametric可以解出yrepresentation或x 的方程 不显含y 或x 的方程
+             (  )3                      dy         dy
+ 例1：解方程    + 2x  −y = 0 .                       dx         dx
+                             dy
+ 解：可解出y , 令p =      , 得                              dx
+                    y = p3 + 2xp.             (2.65)
+
+  两边对x 求导数, 得
+
+                    dp     dp
+              p = 3p2  + 2x  + 2p,
+                     dx     dx
+
+ 即
+
+              3p2 dp + 2x dp + p dx = 0.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p9 ---
+(    )                (    )
+一阶隐式微分方程与参数表示First-order implicit differential equations and parametric可以解出yrepresentation或x 的方程 不显含y 或x 的方程
+
+
+              3p2 dp + 2x dp + p dx = 0.
+
+  当p̸ = 0 时, 上式乘p , 化为
+
+             3p3 dp + 2px dp + p2 dx = 0,
+
+ 分组凑积分得
+
+                   3
+              + xp2 = c,                   4p4
+
+  其中c 为任意常数. 解出x , 得
+                          c −34p4                     x =             .
+                            p2
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p10 ---
+(    )                (    )
+一阶隐式微分方程与参数表示First-order implicit differential equations and parametric可以解出yrepresentation或x 的方程 不显含y 或x 的方程
+
+
+                          c −34p4                     x =             .
+                            p2
+
+  代入式(2.65) 得
+
+                     2c         2c            y = p3 +  −3  =  −p3 .                    p   2p3   p    2
+
+  因此, 原方程有参数形式的通解
+         {
+                   x =  c −3p2 ,                              p2     4                                                           p̸ = 0.
+                  y = 2c −p3 ,                            p    2
+
+  此外, 当p = 0 时, 可得原方程还有解y = 0 .
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p11 ---
+(    )                (    )
+一阶隐式微分方程与参数表示First-order implicit differential equations and parametric可以解出yrepresentation或x 的方程 不显含y 或x 的方程
+
+  (2)形如
+                           (                      x = f  y, y′)              (2.66)
+
+  的方程的求解同(2.62) 相似. 这里假设f (y, y′) 有
+  连续偏导数. 令y′ = p, (2.66) 两边对y 求导数, 并
+  代入p 得
+
+                  1    ∂f    ∂f dp
+            =  +                   (2.67)
+                  p   ∂y   ∂p dy
+
+  这是关于y, p 的一阶微分方程, 可按照§2.1 −§2.3
+  的方法求解.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p12 ---
+(    )                (    )
+一阶隐式微分方程与参数表示First-order implicit differential equations and parametric可以解出yrepresentation或x 的方程 不显含y 或x 的方程
+
+
+                  1    ∂f    ∂f dp
+            =  +                   (2.67)
+                  p   ∂y   ∂p dy
+
+   若(2.67) 解为
+
+             Φ (y, p, c) = 0,
+
+   则(2.66) 的通解为参数方程形式:
+           {
+                     x = f (y, p) ,
+             Φ (y, p, c) = 0.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p13 ---
+(    )                (    )
+一阶隐式微分方程与参数表示First-order implicit differential equations and parametric可以解出yrepresentation或x 的方程 不显含y 或x 的方程
+                (  )2
+                           dy        dy     x2 例3：解方程y =     −x  +     .                            dx        dx    2
+                 dy
+ 解：令p =      , 得                  dx
+
+                                   x2
+                  y = p2 −xp +     ,
+                              2
+
+  两边对x 求导数, 得
+
+                   dp    dp
+              p = 2p  −x  −p + x,
+                    dx    dx
+
+ 化简为
+          (    )
+                dp
+             −1  (2p −x) = 0.
+                 dx
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p14 ---
+(    )                (    )
+一阶隐式微分方程与参数表示First-order implicit differential equations and parametric可以解出yrepresentation或x 的方程 不显含y 或x 的方程
+
+
+          (    )
+                dp
+             −1  (2p −x) = 0.
+                 dx
+  从dp −1 = 0 解得p = x + c ( c 为任意常数), 代        dx
+  入y = p2 −xp + x2 得方程的通解                       2
+                         x2
+                  y =  + cx + c2.
+                     2
+                                     x                             x2  又从2p −x = 0 解得p =    , 代入y = p2 −xp +                                 2                        2
+ 得方程的另一解
+                              x2
+                       y =     .
+                          4
+ 此解与方程通解中的任一条积分曲线相切, 为奇解.
+
+                                    第二章一阶微分方程的初等解法
+
+--- p15 ---
+(    )                (    )
+一阶隐式微分方程与参数表示First-order implicit differential equations and parametric可以解出yrepresentation或x 的方程 不显含y 或x 的方程
+
+   (3)(parametric representation)
+ 讨论形如
+                       (               F  x, y′) = 0              (2.69)
+
+  的方程的解法. 令y′ = p , 方程化为F (x, p) = 0 ,
+  代表Oxp 平面上的一条曲线. 如果把曲线表示成
+  参数方程形式:
+             {
+                       x = φ (t) ,
+                                                  (2.70)
+                     p = ψ (t) ,
+
+    t 为参数. 代入y′ = p , 得
+
+                dy = ψ (t) φ′ (t) dt.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p16 ---
+(    )                (    )
+一阶隐式微分方程与参数表示First-order implicit differential equations and parametric可以解出yrepresentation或x 的方程 不显含y 或x 的方程
+
+
+                dy = ψ (t) φ′ (t) dt.
+
+  两边积分, 得
+                ∫
+               y =  ψ (t) φ′ (t) dt + c.
+
+   代入(2.70), 则得原方程的参数形式的通解为
+         {
+                 x = φ (t) ,                    ∫
+                y =  ψ (t) φ′ (t) dt + c,
+
+   c 为任意常数.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p17 ---
+(    )                (    )
+一阶隐式微分方程与参数表示First-order implicit differential equations and parametric可以解出yrepresentation或x 的方程 不显含y 或x 的方程
+
+  例4：解方程x3 + y′3 −3xy′ = 0 , 其中y′ = dy  .                                                        dx
+  解：令y′ = p = tx , 代入方程得
+
+                               3t
+                       x =
+                        1 + t3
+
+ 即
+                               3t2
+                    p =                        1 + t3.
+
+ 所以
+                    9 (1 −2t3) t2
+               dy =                dt.
+                         (1 + t3)3
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p18 ---
+(    )                (    )
+一阶隐式微分方程与参数表示First-order implicit differential equations and parametric可以解出yrepresentation或x 的方程 不显含y 或x 的方程
+
+                    9 (1 −2t3) t2
+               dy =                dt.
+                         (1 + t3)3
+
+  积分之, 得
+      ∫9 (1 −2t3) t2     3 1 + 4t3
+       y =                 dt =      + c,
+                 (1 + t3)3       2 (1 + t3)2
+
+   c 为任意常数. 故原方程参数形式的通解为
+          {
+                    x =   3t                             1+t3,
+                            3 1+4t3                   y =     + c.
+                            2 (1+t3)2
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p19 ---
+(    )                (    )
+一阶隐式微分方程与参数表示First-order implicit differential equations and parametric可以解出yrepresentation或x 的方程 不显含y 或x 的方程
+
+   (4) 形如
+                       (               F  y, y′) = 0              (2.71)
+
+  的方程, 其求解方法与(2.69) 的解法相似. 令
+    y′ = p , 方程化为F (y, p) = 0 , 代表Oyp 平面上的
+  一条曲线. 如果把曲线表示成参数方程形式:
+             {
+                      y = φ (t) ,
+                     p = ψ (t) ,
+
+  代入dy = p dx , 得
+                      φ′ (t)
+              dx =       dt,  ψ (t)̸ = 0
+               ψ (t)
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p20 ---
+(    )                (    )
+一阶隐式微分方程与参数表示First-order implicit differential equations and parametric可以解出yrepresentation或x 的方程 不显含y 或x 的方程
+
+
+                            φ′ (t)
+                   dx =       dt,
+                   ψ (t)
+
+ 积分得原方程的通解为
+          {                          ∫φ′(t)
+                    x =       dt + c,                                   ψ(t)
+                   y = φ (t) ,
+
+  其中c 为任意常数.
+  当y′ = p = 0 时, F (y, 0) = 0 有实根y = k , 即
+   y = k 也是方程的解.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p21 ---
+(    )                (    )
+一阶隐式微分方程与参数表示First-order implicit differential equations and parametric可以解出yrepresentation或x 的方程 不显含y 或x 的方程
+
+  例5：求解方程y2 (1 −y′) = (2 −y′)2 , 其中
+    y′ = dy  .          dx
+ 解：令2 −y′ = ty , 与原方程消去y′ , 有
+
+                    y2 (ty −1) = t2y2,
+
+ 即
+
+                        1
+                      y =  + t
+                                      t
+  代入2 −y′ = ty 得
+
+                             y′ = 1 −t2,
+
+ 这是原微分方程的参数方程形式.
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p22 ---
+(    )                (    )
+一阶隐式微分方程与参数表示First-order implicit differential equations and parametric可以解出yrepresentation或x 的方程 不显含y 或x 的方程
+
+ 因此
+
+                     dy                 dx =  = −1 dt,
+                                y′       t2
+
+  两边积分, 得原方程参数形式的通解为
+             {
+                       x = 1 + c,                                                  t
+                      y = 1 + t,                                                  t
+
+   c 为任意常数.
+  此外, 当y′ = 0 时原方程变为y2 = 4 ,
+  于是y = ±2 也是方程的解.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p23 ---
+谢 谢!
+Thank you!

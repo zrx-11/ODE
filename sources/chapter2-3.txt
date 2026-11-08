@@ -1,0 +1,456 @@
+--- p1 ---
+常微分方程
+一阶微分方程的初等解法
+
+
+
+  理学院
+
+      2026 年8 月
+
+--- p2 ---
+恰当微分方程与积分因子Exact Differential Equations and Integrating Factor
+内容提要
+
+
+     1 恰当微分方程与积分因子Exact Differential Equations and
+        Integrating Factor
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p3 ---
+恰当微分方程与积分因子Exact Differential Equations and Integrating Factor   恰当微分方程Exact Differential Equation 恰当微分方程Exact Differential Eq
+
+ 我们可以将一阶方程
+
+                   dy
+               = f (x, y)
+                    dx
+
+ 写成微分形式
+
+                            f (x, y) dx −dy = 0,
+
+  或者把x, y 平等看待, 写成更一般的对称形式
+
+      M (x, y) dx + N (x, y) dy = 0,         (2.39)
+
+ 这里假设M (x, y) , N (x, y) 是x, y 的连续函数, 且
+  具有连续的一阶偏导数.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p4 ---
+恰当微分方程与积分因子Exact Differential Equations and Integrating Factor   恰当微分方程Exact Differential Equation 恰当微分方程Exact Differential Eq
+
+  如果方程(2.39) 的左端恰好是某个二元函数
+   u (x, y) 的全微分(total differential), 即
+
+                                    ∂u     ∂u
+    M (x, y) dx + N (x, y) dy = du (x, y) =    dx +    dy,    (2.40)
+                                      ∂x     ∂y
+
+   则称(2.39) 为恰当微分方程(Exact Differential
+   Equation).
+ 容易验证恰当微分方程的通解为
+
+                   u (x, y) = c,              (2.41)
+
+  这里c 是任意常数.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p5 ---
+恰当微分方程与积分因子Exact Differential Equations and Integrating Factor   恰当微分方程Exact Differential Equation 恰当微分方程Exact Differential Eq
+
+  这样, 我们自然会提出如下问题:
+   (1) 如何判别(2.39) 是恰当微分方程？
+   (2) 如果(2.39) 是恰当微分方程, 如何求得函数
+   u (x, y) ?
+ 首先我们给出一个判定微分方程是恰当方程的定
+ 理。
+ 然后，再给出两种求解恰当方程的方法，
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p6 ---
+恰当微分方程与积分因子Exact Differential Equations and Integrating Factor   恰当微分方程Exact Differential Equation 恰当微分方程Exact Differential Eq
+
+ 定理
+ 二元函数M (x, y) , N (x, y) 在某单连通域内是x, y
+  的连续函数, 且具有连续的一阶偏导数, 则方程
+
+       M (x, y) dx + N (x, y) dy = 0
+
+ 为恰当微分方程的充要条件是
+
+              ∂M  ∂N
+               =
+                    ∂y    ∂x
+
+ 证明：略！
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p7 ---
+恰当微分方程与积分因子Exact Differential Equations and Integrating Factor   恰当微分方程Exact Differential Equation 恰当微分方程Exact Differential Eq
+
+  方法一：积分曲线法(Line integral method)。
+ 令
+             Z                B
+      u (x, y) =  M (x, y) dx + N (x, y) dy.    (2.50)
+               A
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p8 ---
+恰当微分方程与积分因子Exact Differential Equations and Integrating Factor   恰当微分方程Exact Differential Equation 恰当微分方程Exact Differential Eq
+
+  由积分与路径无关, 选择简单的路径进行积分, 如
+   图(2.6) (a) 和(b), 分别得
+           Z             Z                     x                    y
+    u (x, y) =  M (x, y0) dx +   N (x, y) dy, (2.51)
+                      x0                     y0
+           Z             Z                    y                     x
+    u (x, y) =   N (x0, y) dy +  M (x, y) dx. (2.52)
+                      y0                     x0
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p9 ---
+恰当微分方程与积分因子Exact Differential Equations and Integrating Factor   恰当微分方程Exact Differential Equation 恰当微分方程Exact Differential Eq
+
+  方法二：分项组合方法Component combination
+  method。
+  利用二元函数微分的特点, 将恰当微分方程的各项
+ “分项组合”凑成全微分形式.
+
+                                 y dx −x dy       x
+       y dx + x dy = d (xy) ,           = d         ,
+                                         y2          y
+     −y dx + x dy      y       y dx −x dy         x
+           = d        ,         = d  ln         ,
+             x2           x           xy             y
+       y dx −x dy            y   y dx −x dy   1       x −y
+          = d  arccot      ,       =  d  ln               .
+          x2 + y2              x      x2 −y2     2       x + y
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p10 ---
+恰当微分方程与积分因子Exact Differential Equations and Integrating Factor   恰当微分方程Exact Differential Equation 恰当微分方程Exact Differential Eq
+
+ 例1：解方程
+    3x2 + 6xy2 dx + 6x2y + 4y3 dy = 0 .
+ 解：方法1 曲线积分法。由于
+
+                         ∂M      ∂N
+     M = 3x2 + 6xy2, N = 6x2y + 4y3,   = 12xy,  = 12xy
+                                   ∂y        ∂x
+
+  在整个二维实平面上都连续, 因此我们可以令
+              Z (x,y)
+      u (x, y) =   M (x, y) dx + N (x, y) dy
+                           (0,0)
+              Z x       Z y
+        =    3x2 dx +     6x2y + 4y3 dy = x3 + y4 + 3x2y2,
+                       0             0
+
+  即得方程的通解
+           x3 + 3x2y2 + y4 = c,  c 为任意常数
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p11 ---
+恰当微分方程与积分因子Exact Differential Equations and Integrating Factor   恰当微分方程Exact Differential Equation 恰当微分方程Exact Differential Eq
+
+  方法2 分项组合法.
+  将原方程重组:
+
+     3x2 + 6xy2 dx + 6x2y + 4y3 dy = 3x2 dx + 4y3 dy + 6xy2 dx + 6x2y dy
+                     = dx3 + dy4 + 3y2 dx2 + 3x2 dy2
+                     = dx3 + dy4 + 3 d x2y2
+                     = d x3 + y4 + 3x2y2 = 0,
+
+  即得方程的通解
+           x3 + 3x2y2 + y4 = c,  c 为任意常数
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p12 ---
+恰当微分方程与积分因子Exact Differential Equations and Integrating Factor   恰当微分方程Exact Differential Equation 恰当微分方程Exact Differential Eq
+
+  现在恰当微分方程可以求解. 因此, 对于一个非恰
+ 当微分方程，能不能把其化为恰当微分方程.
+  积分因子（Integration Factor）就是为解决这个问
+  题而引进的概念.
+ 如果存在连续可微函数µ (x, y)̸ = 0 , 使得
+
+    µ (x, y) M (x, y) dx + µ (x, y) N (x, y) dy = 0  (2.56)
+
+  为一恰当微分方程, 即存在函数u (x, y) , 使得
+
+   µ (x, y) M (x, y) dx + µ (x, y) N (x, y) dy = du (x, y)
+
+ 则称µ (x, y) 为方程(2.39) 的积分因子
+  （Integration Factor）.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p13 ---
+恰当微分方程与积分因子Exact Differential Equations and Integrating Factor   恰当微分方程Exact Differential Equation 恰当微分方程Exact Differential Eq
+
+  另外, 同一个方程可以有不同的积分因子. 如
+
+                   y dx −x dy = 0
+
+ 有积分因子
+
+              1  1  1    1      1
+                 x2, y2, xy, x2 + y2, x2 −y2
+
+  等. 可以证明, 只要方程有解存在, 则必有积分因子
+  存在, 并且不唯一. 因此, 在具体解题过程中, 由于
+  找到的积分因子不同, 从而通解可能有不同的形式.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p14 ---
+恰当微分方程与积分因子Exact Differential Equations and Integrating Factor   恰当微分方程Exact Differential Equation 恰当微分方程Exact Differential Eq
+
+  根据定理1, 函数µ (x, y)̸ = 0 为方程(2.39) 的积分
+ 因子的充要条件是
+
+              ∂(µM)   ∂(µN)
+               =            ,
+                  ∂y       ∂x
+
+ 即
+       N∂µ −M∂µ =  ∂M −∂N  µ,       (2.57)
+          ∂x     ∂y     ∂y   ∂x
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p15 ---
+恰当微分方程与积分因子Exact Differential Equations and Integrating Factor   恰当微分方程Exact Differential Equation 恰当微分方程Exact Differential Eq
+
+
+       N∂µ −M∂µ =  ∂M −∂N  µ,       (2.57)
+          ∂x     ∂y     ∂y   ∂x
+
+ 这是一个以µ 为未知函数的一阶线性偏微分方程.
+  想要通过解方程(2.57) 来找积分因子, 从而得到
+   (2.39) 的解, 在一般情况下, 将比直接对(2.39) 求
+  解更困难.
+  但是在若干特殊情况下, 求(2.57) 的一个特解还是
+  容易的, 比如我们寻求的积分因子只与x 或y 有
+  关.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p16 ---
+恰当微分方程与积分因子Exact Differential Equations and Integrating Factor   恰当微分方程Exact Differential Equation 恰当微分方程Exact Differential Eq
+
+  例如对于方程(2.39), 如果存在只与x 有关的积分
+ 因子µ = µ (x) , 则∂µ = 0 , 这时方程(2.57) 就变                         ∂y
+ 为
+           Ndµ =  ∂M −∂N  µ
+                 dx     ∂y   ∂x
+ 即
+                    ∂M −∂N               dµ    ∂y    ∂x
+             =          dx.           (2.58)
+               µ    N
+  由此可见, 如果通过(2.58) 解出µ = µ (x) , 等号右
+ 端必须与y 无关, 即必须要求
+                ∂M −∂N                      ∂y    ∂x
+                = ψ (x) ,           (2.59)
+              N
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p17 ---
+恰当微分方程与积分因子Exact Differential Equations and Integrating Factor   恰当微分方程Exact Differential Equation 恰当微分方程Exact Differential Eq
+
+ 这里ψ (x) 仅为x 的函数. 这时解得
+                                    R
+               µ (x) = e  ψ(x)dx.            (2.60)
+
+  同样可以证明, 方程(2.39) 存在µ = µ (y) 形式的
+  积分因子的充要条件:
+                 ∂N −∂M                      ∂x    ∂y
+                = φ (y) ,
+           M
+
+ 这里φ (y) 仅为y 的函数. 此时积分因子为
+                                    R
+               µ (y) = e  φ(y)dy.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p18 ---
+恰当微分方程与积分因子Exact Differential Equations and Integrating Factor   恰当微分方程Exact Differential Equation 恰当微分方程Exact Differential Eq
+
+ 例3：试用积分因子法解线性微分方程
+    dy
+    = P (x) y + Q (x) .    dx
+ 解：将原方程改写为
+
+           [P (x) y + Q (x)] dx −dy = 0,         (2.61)
+
+ 有M = P (x) y + Q (x) , N = −1 , 得
+
+               ∂M −∂N                     ∂y    ∂x
+                = −P (x) .
+             N
+
+  因此, 线性微分方程有只与xR        有关的积分因子
+  µ (x) = e−  P(x)dx .
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p19 ---
+恰当微分方程与积分因子Exact Differential Equations and Integrating Factor   恰当微分方程Exact Differential Equation 恰当微分方程Exact Differential Eq
+
+ 于是以µ 乘式(2.61) 两端得
+              R                   R                        R
+  P (x) e−  P(x)dxy dx −e−  P(x)dx dy + Q (x) e−  P(x)dx dx =
+
+ 即
+             R              R                        R
+  −y de−  P(x)dx −e−  P(x)dx dy + Q (x) e−  P(x)dx dx = 0,
+
+ 或者写作
+                    R                      R
+     −d  ye−  P(x)dx + Q (x) e−  P(x)dx dx = 0,
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p20 ---
+恰当微分方程与积分因子Exact Differential Equations and Integrating Factor   恰当微分方程Exact Differential Equation 恰当微分方程Exact Differential Eq
+
+
+
+                    R                      R
+     −d  ye−  P(x)dx + Q (x) e−  P(x)dx dx = 0,
+
+ 得通解
+                  Z                R                        R
+        ye−  P(x)dx −  Q (x) e−  P(x)dx dx = c,
+
+ 即
+                 Z                R                       R
+       y = e  P(x)dx   Q (x) e−  P(x)dx dx + c   ,
+
+  其中c 为任意常数.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p21 ---
+恰当微分方程与积分因子Exact Differential Equations and Integrating Factor   恰当微分方程Exact Differential Equation 恰当微分方程Exact Differential Eq
+
+ 例5：解方程y dx + (y −x) dy = 0 .
+ 解：因M = y, N = y −x, ∂M = 1, ∂N = −1 , 方程                                ∂y       ∂x
+  不是恰当微分方程.
+              ∂M −∂N
+  方法1 因  ∂y   ∂x = −2 只与y 有关, 方程有积分因           −M        y
+              R(−2y)dy    1 子µ (y) = e    =     , 于是以µ 乘方程两边得                                 y2
+
+      1     1       dy   y dx −x dy   dy       x        dx +  dy −x  =       +  = d  + ln |y| = 0,
+      y      y       y2         y2        y       y
+
+  得通解
+                     x
+             + ln |y| = c,
+                    y
+
+  其中c 为任意常数.
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p22 ---
+恰当微分方程与积分因子Exact Differential Equations and Integrating Factor   恰当微分方程Exact Differential Equation 恰当微分方程Exact Differential Eq
+
+  此外, 原方程还有解y = 0 .
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p23 ---
+谢 谢!
+Thank you!

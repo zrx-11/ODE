@@ -1,0 +1,455 @@
+--- p1 ---
+常微分方程
+一阶微分方程的初等解法
+
+
+
+ 杭电理学院
+
+      2026 年8 月
+
+--- p2 ---
+变量分离方程与变量变换Variable Separation Equations and Variable Transformation
+内容提要
+
+
+     1 变量分离方程与变量变换Variable Separation Equations and Variable
+       Transformation
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p3 ---
+变量分离方程与变量变换Variable Separation Equations and Variable Transformation变量分离方程 可化为变量分离方程的类型
+变量分离方程
+
+ 形如
+
+                  dy
+              = f (x) φ (y)              (2.1)
+                   dx
+
+  的方程, 称为可分离变量分离的微分方程, 这里
+     f (x) , φ (y) 分别是x, y 的连续函数. 如果φ (y)̸ = 0
+     , 我们可将(2.1) 改写成
+
+                   dy
+               = f (x) dx,
+              φ (y)
+
+  这样变量就“分离”开了, 然后两边积分, 得
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p4 ---
+变量分离方程与变量变换Variable Separation Equations and Variable Transformation变量分离方程 可化为变量分离方程的类型
+
+
+
+                   dy
+               = f (x) dx,
+              φ (y)
+
+             Z        Z
+                 dy
+              =     f (x) dx + c.         (2.2)
+             φ (y)
+
+  注意: 我们可以把(2.2) 理解为y, x, c 之间的相互
+ 关系，我们不妨用Φ (y, x, c) = 0 来表示. 对(2.2)
+  的两边进行微分, 就得到原微分方程,(2.2) 所确定
+ 的函数关系式Φ (y, x, c) = 0 满足(2.1), 是(2.1)
+  的通解.
+  上面的求解方法称为分离变量法（Methods of
+   separation of variables）
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p5 ---
+变量分离方程与变量变换Variable Separation Equations and Variable Transformation变量分离方程 可化为变量分离方程的类型
+变量分离方程
+
+  例：求解方程dy = −x  .                     dx      y
+ 解：方程可变量分离为
+
+                    y dy = −x dx,
+
+ 两边积分得
+                      y2              = −x2 + c
+                   2     2   2
+ 即得通解
+                       y2 + x2 = c,
+
+  这里c 是任意常数, 是隐式解. 显式解:
+            p
+                   y = ±  c −x2.
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p6 ---
+变量分离方程与变量变换Variable Separation Equations and Variable Transformation变量分离方程 可化为变量分离方程的类型
+变量分离方程
+
+ 例：求下列方程的通解.
+                   dy
+               = P (x) y               (2.3)
+                    dx
+  解：y̸ = 0 时, 变量分离为
+                   dy
+              = P (x) dx,
+                    y
+ 两边积分得
+                    Z
+                  ln |y| =  P (x) dx + ¯c,
+
+ 即得通解
+                                 R
+                          |y| = e  P(x)dx+¯c,
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p7 ---
+变量分离方程与变量变换Variable Separation Equations and Variable Transformation变量分离方程 可化为变量分离方程的类型
+变量分离方程
+
+
+
+                                 R
+                          |y| = e  P(x)dx+¯c,
+
+ 即
+                              R             R
+            y = ±e¯c · e  P(x)dx = ce  P(x)dx,      (2.4)
+
+  这里c = ±e¯c .
+  显然, y = 0 也是(2.3) 的解.
+  综合以上, 方程的通解为(2.4), 其中c 为任意常数.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p8 ---
+变量分离方程与变量变换Variable Separation Equations and Variable Transformation变量分离方程 可化为变量分离方程的类型
+可化为变量分离方程的类型
+
+   (1) 形如
+
+                    dy      y
+               = g                     (2.5)
+                    dx      x
+
+  方程称为齐次微分方程（Homogeneous differential
+   equations）, 这里g (u) 是u 的连续函数.
+ 求解思路：作变量变换
+                           y
+                     u = x,                   (2.6)
+
+  即y = ux , 微分可得
+
+                  dy    du
+              = x  + u              (2.7)
+                   dx    dx
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p9 ---
+变量分离方程与变量变换Variable Separation Equations and Variable Transformation变量分离方程 可化为变量分离方程的类型
+可化为变量分离方程的类型
+
+
+                  dy    du
+              = x  + u              (2.7)
+                   dx    dx
+
+  代入(2.5), 并整理得
+
+                 du    g (u) −u
+              =               .              (2.8)
+                   dx       x
+
+  方程(2.8) 是一个变量分离的微分方程. 可按照
+                                        y
+    2.1.1 的方法求解, 然后将u =  代回, 便得(2.5)                                          x
+  的解.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p10 ---
+变量分离方程与变量变换Variable Separation Equations and Variable Transformation变量分离方程 可化为变量分离方程的类型
+可化为变量分离方程的类型
+
+ 例：解方程dy = y + tan y                   dx    x        x.
+                             y             du 解：作变量变换u =    , 则dy = x  + u . 代入并                               x       dx      dx
+  整理,
+
+                  du   tan u
+               =         .                (2.9)
+                    dx     x
+
+  当tan u̸ = 0 时, 分离变量得
+
+                            dx
+                     cot u du =     ,
+                                x
+
+  两边积分, 得
+
+                    ln |sin u| = ln |x| + ¯c,
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p11 ---
+变量分离方程与变量变换Variable Separation Equations and Variable Transformation变量分离方程 可化为变量分离方程的类型
+
+
+
+                    ln |sin u| = ln |x| + ¯c,
+
+  这里¯c 是任意常数. 整理得（±e¯c = c）,
+
+                        sin u = cx .               (2.10)
+
+  另一方面tan u = 0 , 即sin u = 0 也是解.
+  这样在(2.10) 中允许c = 0 , 即可包含tan u = 0.
+  方程(2.9) 的通解为(2.10). 原方程的通解为
+                         y
+                          sin = cx
+                          x
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p12 ---
+变量分离方程与变量变换Variable Separation Equations and Variable Transformation变量分离方程 可化为变量分离方程的类型
+可化为变量分离方程的类型
+
+   (2) 形如
+
+       dy
+      = f (ax + by + c) (a̸ = 0, b̸ = 0) ,     (2.13)
+       dx
+
+  这里f (u) 是u 的连续函数. 作变量变换
+
+                 u = ax + by + c,            (2.14)
+
+  两边对x 求导数, 得
+
+                 du        dy
+              = a + b                (2.15)                   dx         dx.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p13 ---
+变量分离方程与变量变换Variable Separation Equations and Variable Transformation变量分离方程 可化为变量分离方程的类型
+可化为变量分离方程的类型
+
+
+                 du        dy
+              = a + b                (2.15)                   dx         dx.
+
+  代入方程(2.13), 得
+
+                 du
+             = a + bf (u) .            (2.16)
+                  dx
+
+  方程(2.16) 是一个变量分离的微分方程, 可按照
+    2.1.1 的方法求解, 然后将u = ax + by + c 代回, 便
+   得(2.13) 的解.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p14 ---
+变量分离方程与变量变换Variable Separation Equations and Variable Transformation变量分离方程 可化为变量分离方程的类型
+可化为变量分离方程的类型
+
+  例6：解方程dy = (x + y)2 .                      dx
+                                                 dy 解：令u = x + y , 两边微分得du = 1 +      . 代入                                        dx         dx
+ 原方程并整理得
+                  du
+              = 1 + u2,
+                    dx
+
+  分离变量, 求解得
+
+                   arctan u = x + c,
+
+  这里c 是任意常数. 将u = x + y 代回, 得原方程
+ 的通解为
+
+                 arctan (x + y) = x + c.
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p15 ---
+变量分离方程与变量变换Variable Separation Equations and Variable Transformation变量分离方程 可化为变量分离方程的类型
+可化为变量分离方程的类型
+
+   (3) 形如
+
+              dy      a1x + b1y + c1
+           = f                          (2.17)
+               dx      a2x + b2y + c2
+
+ 的方程也可以经变量变换化为变量分离方程, 这里
+    a1, a2, b1, b2, c1, c2 均为常数.
+
+                   a1x + b1y + c1 = 0,                                                  (2.18)
+                   a2x + b2y + c2 = 0
+
+  表示Oxy 平面上的两条直线. 针对方程组的系数
+            a1  b1
+ 行列式                 , 分两种情况进行讨论.
+            a2  b2
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p16 ---
+变量分离方程与变量变换Variable Separation Equations and Variable Transformation变量分离方程 可化为变量分离方程的类型
+可化为变量分离方程的类型
+
+          a1  b1                                           b1          ￿￿           0 , 此时两直线相交。a1 =       =                                           a2̸     b2          a2  b2
+        a1  b1
+         = 0 的情形, 此时两直线平行。上面
+        a2  b2
+   的矩阵的行或者列对应成比例。
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p17 ---
+变量分离方程与变量变换Variable Separation Equations and Variable Transformation变量分离方程 可化为变量分离方程的类型
+可化为变量分离方程的类型
+
+          a1  b1          a1     b1
+  情形:    = 0 ,  a2̸ = b2          a2  b2
+
+                   a1x + b1y + c1 = 0,                                                  (2.18)
+                   a2x + b2y + c2 = 0
+
+                      x = α,
+   (2.18) 有唯一解       即Oxy 平面上两条直
+                    y = β,
+  线的交点为(α, β) . 若令
+
+              X = x −α,
+              Y = y −β,
+
+  则式(2.18) 化为
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p18 ---
+变量分离方程与变量变换Variable Separation Equations and Variable Transformation变量分离方程 可化为变量分离方程的类型
+可化为变量分离方程的类型
+
+  则式(2.18) 化为
+
+                 a1X + b1Y = 0,
+                 a2X + b2Y = 0.
+
+                !
+                      Y       dY       a1 + b1 XY        = f        = g          ,       (2.19)
+       dX      a2 + b2 XY     X
+
+  这是一个齐次微分方程, 求解代回原变量即可得原
+  方程(2.17) 的解.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p19 ---
+变量分离方程与变量变换Variable Separation Equations and Variable Transformation变量分离方程 可化为变量分离方程的类型
+可化为变量分离方程的类型
+
+           a1  b1
+  情形:      = 0
+           a2  b2
+  首先a1, b1, a2, b2 全为零，则方程可解。
+  其次，假设其中又不为零的，不防假设a2, b2 不全
+ 为零，令u = a2x + b2y , 必存在k，使得
+             a1x + b1y = k(a2x + b2y) = ku
+                          dy     , 此时du            dx       = a2 + b2 dx,
+       k(a2x+b2y)+c1        ku+c1     f         = f     = g (u) . 方程(2.17)       (a2x+b2y)+c2         u+c2
+ 化为
+
+                du
+             = a2 + b2g (u) ,
+                 dx
+
+                                    第二章一阶微分方程的初等解法
+
+--- p20 ---
+变量分离方程与变量变换Variable Separation Equations and Variable Transformation变量分离方程 可化为变量分离方程的类型
+可化为变量分离方程的类型
+
+  此外, 诸如
+
+     yf (xy) dx + xg (xy) dy = 0,
+      dy
+     x2  = f (xy) ,
+       dx
+    dy       y
+     = xf
+     dx       x2
+  M (x, y) (x dx + y dy) + N (x, y) (x dy −y dx) = 0
+
+  (其中M, N 为x, y 的齐次函数, 幂次可以不同) 等
+  类型, 均可通过适当的变量变换化为变量分离方程.
+
+
+
+
+
+                                    第二章一阶微分方程的初等解法
+
+--- p21 ---
+谢 谢!
+Thank you!

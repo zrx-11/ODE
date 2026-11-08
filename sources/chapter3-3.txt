@@ -1,0 +1,346 @@
+--- p1 ---
+常微分方程
+奇解Singular Solution
+
+
+
+ 杭电理学院
+
+    2025 年8 月
+
+--- p2 ---
+奇解Singular Solution
+内容提要
+
+
+    1 奇解Singular Solution
+
+
+
+
+
+                                   第三章一阶微分方程的解的存在定理
+
+--- p3 ---
+奇解Singular Solution     包络Envelope 奇解Singular Solutions
+补充题目：
+
+   1. 证明：微分方程
+
+                  dy
+              = exy sin y
+                   dx
+
+ 的任一解存在区间为(−∞, +∞)
+   2. 证明微分方程
+
+                dy        sin y
+             =
+                 dx    x2 + y2 + 1
+
+ 的任一解的存在区间为(−∞, +∞).
+
+
+
+
+
+                                   第三章一阶微分方程的解的存在定理
+
+--- p4 ---
+奇解Singular Solution     包络Envelope 奇解Singular Solutions
+包络Envelope
+
+ 给定单参数曲线族the family of single parameter
+   curves
+
+                    Φ(x, y; c) = 0,             (3.19)
+
+ 其中c 是参数, Φ(x, y, c) 是x, y, c 的连续可微函数.
+  ∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗
+  曲线族(3.19) 的包络是指这样的曲线, 它本身并不
+ 包含在曲线族(3.19) 中, 但过此曲线的每一点, 有
+  曲线族(3.19) 中的一条曲线和它在这点相切。
+
+
+
+
+
+                                   第三章一阶微分方程的解的存在定理
+
+--- p5 ---
+奇解Singular Solution     包络Envelope 奇解Singular Solutions
+
+例如, 单参数曲线族(a family of single parameter
+curves)
+                 (x −c)2 + y2 = R2
+(这里R 是常数, c 是参数) 表示圆心为(c, 0) 而半
+径等于R 的一族圆. 此曲线族显然有包络。
+             y = R 和  y = −R
+
+
+
+
+
+                                第三章一阶微分方程的解的存在定理
+
+--- p6 ---
+奇解Singular Solution     包络Envelope 奇解Singular Solutions
+
+但是, 一般的曲线族并不一定有包络, 例如同心圆
+族、平行直线族都是没有包络的.
+
+                 Φ(x, y; c) = 0,             (3.19)
+
+由微分几何学可知，曲线族（3.19）的包络包含在
+由方程组
+          {
+                  Φ(x, y, c) = 0
+                                              (3.20)
+                  Φ′c(x, y, c) = 0
+
+消去c 而得到的曲线之中。
+
+
+
+
+
+                                第三章一阶微分方程的解的存在定理
+
+--- p7 ---
+奇解Singular Solution     包络Envelope 奇解Singular Solutions
+
+这是因为：记L 为包络线, 则∀(x, y) ∈L , 存在对
+应关系
+
+           C : C = C (x, y)
+
+. 即
+          Φ (x, y, c (x, y)) = 0
+若令         {
+                      x = φ (t)
+            L :
+                     y = ψ (t) .
+
+则C = C (x, y) = C (t)
+进而有
+        Φ (φ (t) , ψ (t) , C (t)) = 0
+
+
+
+
+
+                                第三章一阶微分方程的解的存在定理
+
+--- p8 ---
+奇解Singular Solution     包络Envelope 奇解Singular Solutions
+
+两端对t 求导, 得到
+
+      ∂Φ     ∂Φ     ∂Φ
+             φ′(t) +    ψ′(t) +     c′(t) = 0
+        ∂x       ∂y       ∂c
+
+再由包络线在t 处的切线为(φ′ (t) , φ′ (t)) , 曲线重                  (   )  (     )
+                                 dy在C = c (t) 处的切线为  1,   =  1, −Φx 所以                                  dx           Φy
+
+         ∂Φ     ∂Φ
+                  φ′(t) +    ψ′(t) = 0.
+            ∂x       ∂y
+
+即
+              ∂Φ
+              = 0
+                   ∂c
+.
+
+
+
+
+
+                                第三章一阶微分方程的解的存在定理
+
+--- p9 ---
+奇解Singular Solution     包络Envelope 奇解Singular Solutions
+
+
+          {
+                  Φ(x, y, c) = 0
+                                              (3.20)
+                  Φ′c(x, y, c) = 0
+
+曲线（3.20）称为（3.19）的c-判别曲线(c-test
+formula)。
+必须注意，在c-判别曲线中有时除去包络外，还
+有其他曲线。c-判别曲线中究竟哪—条是包络尚需
+实际检验。
+
+
+
+
+
+                                第三章一阶微分方程的解的存在定理
+
+--- p10 ---
+奇解Singular Solution     包络Envelope 奇解Singular Solutions
+
+例
+求直线族
+
+             x cos α + y sin α −p = 0        (3.21)
+
+的包络，这里α 是参数，p 是常数。
+
+
+
+
+
+                                第三章一阶微分方程的解的存在定理
+
+--- p11 ---
+奇解Singular Solution     包络Envelope 奇解Singular Solutions
+
+解: 将（3.21）对α 求导数，得到
+
+          −x sin α + y cos α = 0         (3.22)
+
+为了从（3.21），（3.22）中消去α ，将（3.21）移
+项，然后平方，有
+
+  x2 cos2 α + y2 sin2 α + 2xy cos α sin α = p2.  (3.23)
+
+将（3.22）平方，又得
+
+  x2 sin2 α + y2 cos2 α −2xy cos α sin α = 0.  (3.24)
+
+
+
+
+
+                                第三章一阶微分方程的解的存在定理
+
+--- p12 ---
+奇解Singular Solution     包络Envelope 奇解Singular Solutions
+
+将（3.23）和（3.24）相加，得到
+                   x2 + y2 = p2,              (3.25)
+容易检验，（3.25）是直线族（3.21）的包络。
+
+
+
+
+
+                                第三章一阶微分方程的解的存在定理
+
+--- p13 ---
+奇解Singular Solution     包络Envelope 奇解Singular Solutions
+
+我们现在引进奇解(Singular Solutions)的概念.
+∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗
+微分方程的某一个解称为奇解，如果在这个解的
+每一点上至少还有方程的另外一个解存在.
+−−−−−−−−−−−−−−−−−−−−−−−−−−
+也就是说奇解是这样的一个解，在它上面的每一
+点唯一性都不成立。
+−−−−−−−−−−−−−−−−−−−−−−−−−−
+从奇解的定义容易知道一阶微分方程的通解的包
+络（如果它存在的话）一定是奇解；反之，微分方
+程的奇解（若存在的话）也是微分方程的通解的包
+络。
+
+
+
+
+
+                                第三章一阶微分方程的解的存在定理
+
+--- p14 ---
+奇解Singular Solution     包络Envelope 奇解Singular Solutions
+
+按照上面的叙述（应用解的存在唯一性），我们得
+到一种求奇解的方法: 方程
+           (     )
+                      dy
+           F   x, y,   = 0           (3.30)
+                      dx
+
+由隐式微分方程解的存在唯一性定理，如果
+F (x, y, y′) 关于
+x, y, y′ 连续可微，且∂F = 0 就能保证解是唯一的。                                      ∂y′̸
+因此，奇解（存在的话）必须同时满足方程
+          (          ∂F (x, y, y′)      F  x, y, y′) = 0,        = 0
+                               ∂y′
+
+于是，我们有下面结论：
+
+
+
+
+                                第三章一阶微分方程的解的存在定理
+
+--- p15 ---
+奇解Singular Solution     包络Envelope 奇解Singular Solutions
+
+方程
+           (     )
+                      dy
+           F   x, y,   = 0           (3.30)
+                      dx
+
+的奇解包含在由方程组
+          {
+                   F(x, y, p) = 0
+                                              (3.31)
+                    F′p(x, y, p) = 0
+
+表示的曲线中。
+∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗
+曲线(3.31) 称为方程（3.30）的p-判别曲线(p-test
+formula). p-判别曲线是否是方程的奇解，尚需进
+一步检验。
+
+
+
+
+                                第三章一阶微分方程的解的存在定理
+
+--- p16 ---
+奇解Singular Solution     包络Envelope 奇解Singular Solutions
+
+ 综合前面叙述，我们就有两种求微分方程奇解的
+ 方法：
+（1）p-判别法
+（2）c-判别法(要先求通解)
+
+
+
+
+
+                                  第三章一阶微分方程的解的存在定理
+
+--- p17 ---
+奇解Singular Solution     包络Envelope 奇解Singular Solutions
+
+例
+      (   )2
+求方程   dy  + y2 −1 = 0 的奇解。           dx
+
+解: 从      {
+                  p2 + y2 −1 = 0
+                2p = 0
+
+消去p 得到p-判别曲线
+
+                    y = ±1
+
+容易验证，这两条直线都是方程的奇解。因为容易
+求得原方程的通解为
+
+                 y = sin(x + c),
+
+
+
+                                第三章一阶微分方程的解的存在定理
+
+--- p18 ---
+谢 谢!
+Thank you!

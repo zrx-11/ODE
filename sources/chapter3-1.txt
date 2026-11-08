@@ -1,0 +1,429 @@
+--- p1 ---
+常微分方程
+一阶微分方程的解的存在定理
+
+
+
+  杭电理学院
+
+        2025 年8 月
+
+--- p2 ---
+解的存在唯一性定理与逐步逼近法Existence and Uniqueness Theorem and Successive Approximation Method
+内容提要
+
+
+     1 解的存在唯一性定理与逐步逼近法Existence and Uniqueness
+      Theorem and Successive Approximation Method
+
+
+
+
+
+                                    第三章一阶微分方程的解的存在定理
+
+--- p3 ---
+解的存在唯一性定理与逐步逼近法Existence and Uniqueness Theorem and Successive存在唯一性定理Approximation Method
+
+ 本章重点介绍和证明一阶微分方程的解的存在唯
+  一性定理, 并叙述解的性质, 如解的延拓、解对初
+  值的连续性和可微性等. 此外, 还引进奇解的概念
+  及介绍求奇解的两种方法.
+
+
+
+
+
+                                    第三章一阶微分方程的解的存在定理
+
+--- p4 ---
+解的存在唯一性定理与逐步逼近法Existence and Uniqueness Theorem and Successive存在唯一性定理Approximation Method
+
+ 考虑一阶微分方程
+
+                   dy
+              = f (x, y) ,               (3.1)
+                    dx
+
+  这里f (x, y) 是
+
+         R : |x −x0| ≤a, |y −y0| ≤b       (3.2)
+
+  上的连续函数.
+
+
+
+
+
+                                    第三章一阶微分方程的解的存在定理
+
+--- p5 ---
+解的存在唯一性定理与逐步逼近法Existence and Uniqueness Theorem and Successive存在唯一性定理Approximation Method
+
+  函数f (x, y) 称为在R 上关于y 满足利普希茨条件
+    (Lipschitz condition), 是指存在常数L > 0 , 使得不
+ 等式
+
+                   |f (x, y1) −f (x, y2)| ≤L |y1 −y2|
+
+  对于所有(x, y1) , (x, y2) ∈R 都成立, L 称为利普希
+   茨常数(Lipschitz constant).
+
+
+
+
+
+                                    第三章一阶微分方程的解的存在定理
+
+--- p6 ---
+解的存在唯一性定理与逐步逼近法Existence and Uniqueness Theorem and Successive存在唯一性定理Approximation Method
+
+   定理(Existence and Uniqueness Theorem)
+  如果f (x, y) 在矩形域R 上连续且关于y 满足利普
+  希茨条件, 则方程(3.1) 在区间|x −x0| ≤h 内，存
+ 在唯一的解y = φ (x) , 连续且满足初值条件
+
+               φ (x0) = y0,                (3.3)
+
+  这里h = min  a, b   , M = max  |f (x, y)| .             M
+                                   (x,y)∈R
+
+
+
+
+
+                                    第三章一阶微分方程的解的存在定理
+
+--- p7 ---
+解的存在唯一性定理与逐步逼近法Existence and Uniqueness Theorem and Successive存在唯一性定理Approximation Method
+
+  采用皮卡的逐步逼近法(Picard’s approximation
+   method) 来证明此定理.
+  为简单, 只对x0 ≤x ≤x0 + h 进行讨论,
+  对x0 −h ≤x ≤x0 的讨论完全一样.
+  证明定理的思路:
+   (1) 首先证明求微分方程初值问题的解等价于下面
+  积分方程的解(the solution of the integral equation)
+                     Z                                    x
+                y = y0 +      f (ξ, y) dξ.
+                                      x0
+
+   (2) 再证明积分方程的解的存在唯一性.
+
+
+
+
+
+                                    第三章一阶微分方程的解的存在定理
+
+--- p8 ---
+解的存在唯一性定理与逐步逼近法Existence and Uniqueness Theorem and Successive存在唯一性定理Approximation Method
+
+   (3) 要得到积分方程的解，我们构造一个函数序列。
+  任取一个连续函数φ0 (x) 代替积分方程右端的y ,
+ 就得到函数
+                     Z                                    x
+           φ1 (x) = y0 +      f (ξ, φ0 (ξ)) dξ,
+                                      x0
+
+  显然φ1 (x) 也是连续函数.
+  如果φ1 (x) = φ0 (x) , 那么φ0 (x) 就是积分方程的
+  解. 否则, 我们又把φ1 (x) 代替积分方程右端的y ,
+ 得到
+                     Z                                    x
+           φ2 (x) = y0 +      f (ξ, φ1 (ξ)) dξ.
+                                      x0
+
+
+
+
+
+                                    第三章一阶微分方程的解的存在定理
+
+--- p9 ---
+解的存在唯一性定理与逐步逼近法Existence and Uniqueness Theorem and Successive存在唯一性定理Approximation Method
+
+  一般地, 作函数
+                  Z                               x
+       φn (x) = y0 +      f (ξ, φn−1 (ξ)) dξ,      (3.4)
+                                  x0
+
+ 这样就得到连续函数序列
+
+           φ0 (x) , φ1 (x) , · · · , φn (x) , · · · .
+
+  如果φn+1 (x) = φn (x) , 那么φn (x) 就是积分方程
+  的解. 如果始终不发生这种情况, 我们可以证明上
+ 面的函数序列有一个极限函数φ (x) , 即
+
+             n→∞φnlim    (x) = φ (x)
+
+
+
+
+
+                                    第三章一阶微分方程的解的存在定理
+
+--- p10 ---
+解的存在唯一性定理与逐步逼近法Existence and Uniqueness Theorem and Successive存在唯一性定理Approximation Method
+
+
+             n→∞φnlim    (x) = φ (x)
+
+ （极限函数）就是积分方程的解。
+ 这种一步一步地求出方程的解的方法就称为逐步
+  逼近法(the Method of successive approximation).
+   由(3.4) 确定的函数φn (x) 称为初值问题
+    (3.1),(3.3) 的第n 次近似解. 我们分五个命题来实
+  现上面的思路.
+
+
+
+
+
+                                    第三章一阶微分方程的解的存在定理
+
+--- p11 ---
+解的存在唯一性定理与逐步逼近法Existence and Uniqueness Theorem and Successive存在唯一性定理Approximation Method
+
+  命题(1)
+  设y = φ (x) 是方程(3.1) 的定义于
+   x0 ≤x ≤x0 + h 上, 满足初值条件
+
+                φ (x0) = y0
+
+  的解, 则y = φ (x) 是积分方程
+            Z                      x
+      y = y0 +      f (ξ, y) dξ,  x0 ≤x ≤x0 + h   (3.5)
+                        x0
+
+  的连续解. 反之亦然.
+
+
+
+
+
+                                    第三章一阶微分方程的解的存在定理
+
+--- p12 ---
+解的存在唯一性定理与逐步逼近法Existence and Uniqueness Theorem and Successive存在唯一性定理Approximation Method
+
+    1. 写出与下列积分方程等价的微分方程, 并求出相
+  应的解:                   R                           x
+   (1) . y(x) = ex +  0y (ξ) ds
+
+
+
+
+
+                 dy         = ex + y                 dx      ⇒y = (x + 1)ex,
+             y (0) = 1
+
+
+
+
+
+                                    第三章一阶微分方程的解的存在定理
+
+--- p13 ---
+解的存在唯一性定理与逐步逼近法Existence and Uniqueness Theorem and Successive存在唯一性定理Approximation Method
+       R                      R            x                              x
+    (2).    (x −ξ) y (ξ) dξ = 2x +     (ξ) dξ          0                       0y
+
+
+
+
+
+                      dy
+            = y                      dx     ⇒y = −2ex,
+               y (0) = −2
+
+
+
+
+
+                                    第三章一阶微分方程的解的存在定理
+
+--- p14 ---
+解的存在唯一性定理与逐步逼近法Existence and Uniqueness Theorem and Successive存在唯一性定理Approximation Method
+
+  现在取φ0 (x) = y0 , 构造皮卡逐步逼近函数序列
+  如下(x0 ≤x ≤x0 + h):
+
+         φ0 (x) = y0,                      R                                x                        (3.7)
+        φn (x) = y0 +   x0f (ξ, φn−1 (ξ)) dξ,
+   n = 1, 2, · · · .
+
+  命题(2)
+ 对于所有的n ,(3.7) 中函数φn (x) 在
+   x0 ≤x ≤x0 + h 上有定义、连续且满足不等式
+
+                    |φn (x) −y0| ≤b.             (3.8)
+
+  这样有了命题2，证明过程中出现的f(x, φn(x)) 都
+ 是有意义的。
+
+                                    第三章一阶微分方程的解的存在定理
+
+--- p15 ---
+解的存在唯一性定理与逐步逼近法Existence and Uniqueness Theorem and Successive存在唯一性定理Approximation Method
+
+  命题(3)
+  函数序列{φn (x)} 在x0 ≤x ≤x0 + h 上是一致收
+  敛的.
+
+
+
+
+
+                                    第三章一阶微分方程的解的存在定理
+
+--- p16 ---
+解的存在唯一性定理与逐步逼近法Existence and Uniqueness Theorem and Successive存在唯一性定理Approximation Method
+
+  命题(4)
+  φ (x) 是积分方程(3.5) 的定义于x0 ≤x ≤x0 + h
+  上的连续解.
+
+
+
+
+
+                                    第三章一阶微分方程的解的存在定理
+
+--- p17 ---
+解的存在唯一性定理与逐步逼近法Existence and Uniqueness Theorem and Successive存在唯一性定理Approximation Method
+
+  命题(5 唯一性)
+ 设ψ (x) 是积分方程(3.5) 的定义于
+   x0 ≤x ≤x0 + h 上的另一个连续解, 则
+  φ (x) = ψ (x) (x0 ≤x ≤x0 + h) .
+
+
+
+
+
+                                    第三章一阶微分方程的解的存在定理
+
+--- p18 ---
+解的存在唯一性定理与逐步逼近法Existence and Uniqueness Theorem and Successive存在唯一性定理Approximation Method
+
+    6. 证明格朗沃尔(Gronwall) 不等式:
+ 设K 为非负常数, f(t) 和g(t) 为在区间α ⩽t ⩽β
+  上的连续非负函数, 且满足不等式
+                 Z                                          t
+              f(t) ⩽K +    f(s)g(s)ds, α ⩽t ⩽β,
+                          a
+
+ 则有
+                   Z                                              t
+            f(t) ⩽K exp     g(s)ds   , α ⩽t ⩽β.
+                             a
+
+
+
+
+
+                                    第三章一阶微分方程的解的存在定理
+
+--- p19 ---
+解的存在唯一性定理与逐步逼近法Existence and Uniqueness Theorem and Successive存在唯一性定理Approximation Method
+
+  注1: 存在唯一性定理中数h 的几何意义: 曲线的
+ 斜率
+                 dy
+             = |f (x, y)| ≤M
+                 dx
+  由于h = min  a, b   , M = max  |f (x, y)|             M
+                                   (x,y)∈R
+
+
+
+
+
+                                    第三章一阶微分方程的解的存在定理
+
+--- p20 ---
+解的存在唯一性定理与逐步逼近法Existence and Uniqueness Theorem and Successive存在唯一性定理Approximation Method
+
+  注2: 由于利普希茨条件不易检验, 常用f (x, y) 在
+  R 上有对y 的连续偏导数来代替. 设在R 上
+      ∂f
+    ≤L , 这时     ∂y
+
+          |f (x, y1) −f (x, y2)|
+       ∂f (x, y2 + θ (y1 −y2))
+  =                           |y1 −y2| ≤L |y1 −y2| ,
+              ∂y
+
+  这里(x, y1) , (x, y2) ∈R, 0 < θ < 1 .
+
+
+
+
+
+                                    第三章一阶微分方程的解的存在定理
+
+--- p21 ---
+解的存在唯一性定理与逐步逼近法Existence and Uniqueness Theorem and Successive存在唯一性定理Approximation Method
+
+  考虑一阶隐式方程(the first-order implicit equation)
+
+              F  x, y, y′ = 0,             (3.15)
+
+  根据隐函数存在定理, 如果F 在(x0, y0, y′0) 的某一
+ 邻域内连续且F (x0, y0, y′0) = 0 , 而∂F∂y′̸ = 0 , 则y′
+  可唯一地表示为x, y 的函数
+
+                             y′ = f (x, y) ,
+
+
+
+
+
+                                    第三章一阶微分方程的解的存在定理
+
+--- p22 ---
+解的存在唯一性定理与逐步逼近法Existence and Uniqueness Theorem and Successive存在唯一性定理Approximation Method
+
+  更进一步, 如果F 关于所有变元存在连续偏导数,
+  则f (x, y) 对x, y 也存在连续偏导数, 并且
+
+                     ∂f             = −∂F/∂y                 ∂y     ∂F/∂y′,
+
+  显然它是有界的. 就有下面的定理
+
+
+
+
+
+                                    第三章一阶微分方程的解的存在定理
+
+--- p23 ---
+解的存在唯一性定理与逐步逼近法Existence and Uniqueness Theorem and Successive存在唯一性定理Approximation Method
+
+  定理(隐式存在唯一性定理)
+  如果在点(x0, y0, y′0) 的某一邻域中,
+
+         (1)    F (x, y, y′) 对所有变元(x, y, y′) 连续, 且存在连
+   续偏导数;
+
+
+         (2)    F (x0, y0, y′0) = 0;
+         (3)   ∂F(x0,y0,y′0)
+                  ∂y′̸  = 0,
+  则方程(3.15) 存在唯一解
+
+      y = y (x) , |x −x0| ≤h ( h 为足够小的正数)
+
+ 满足初值条件
+
+               y (x0) = y0, y′ (x0) = y′0.
+
+
+
+                                    第三章一阶微分方程的解的存在定理
+
+--- p24 ---
+谢 谢!
+Thank you!
